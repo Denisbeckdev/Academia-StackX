@@ -1,12 +1,15 @@
+import React from "react";
+import Header from './components/Header';  // Corrigindo o caminho
+
 function App() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1>Academia StackX</h1>
-          <p>Teste</p>
-        </header>
-      </div>
-    );
-  }
-  
-  export default App;
+  return (
+    <div className="App">
+      <Header />  {/* Agora o Header deve ser exibido corretamente */}
+      <main>
+        {/* Seu conteúdo aqui */}
+      </main>
+    </div>
+  );
+}
+
+export default App;
