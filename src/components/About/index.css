@@ -1,0 +1,64 @@
+section {
+    padding: 2rem 5%;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    .carousel {
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        width: 60%;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .carousel {
+        margin-left: 2rem;
+        width: 40%;
+    }
+}

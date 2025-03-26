@@ -1,12 +1,16 @@
 import React from "react";
-import Header from './components/Header';  // Corrigindo o caminho
+import Header from './components/Header'; 
+import About from "./components/About";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function App() {
   return (
     <div className="App">
-      <Header />  {/* Agora o Header deve ser exibido corretamente */}
+      <Header />
+      <About /> 
       <main>
-        {/* Seu conteúdo aqui */}
+        
       </main>
     </div>
   );
