@@ -3,10 +3,17 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-    background-color: #333;
+    background-color: #686565;
     color: white;
     position: relative;
     width: 100%;
+    box-sizing: border-box;
+}
+
+.header-logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .menu-toggle {
@@ -48,13 +55,19 @@
     color: white;
     text-decoration: none;
     font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.header-nav a:hover {
+    color: #4CAF50;
 }
 
 .header-login {
-    display: none;
+    display: flex;
+    align-items: center;
 }
 
-.header-login button {
+.matricule-se-btn {
     background-color: #4CAF50;
     color: white;
     padding: 0.5rem 1.5rem;
@@ -62,41 +75,59 @@
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s;
 }
 
-.header-login button:hover {
+.matricule-se-btn:hover {
     background-color: #45a049;
+    transform: scale(1.05);
 }
 
-.header-login button:active {
-    background-color: #388e3c;
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
 }
 
-@media (min-width: 600px) {
-    .header-logo {
-        cursor: pointer;
-    }
+.popup-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    color: #333;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
 
-    .header-login {
-        display: block;
-    }
+.popup-content h3 {
+    margin-top: 0;
+    color: #4CAF50;
+}
 
-    .header-login form {
-        display: flex;
-        gap: 0.5rem;
-    }
+.fechar-btn {
+    background: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
 
-    .header-login input {
-        padding: 0.3rem;
-    }
+.fechar-btn:hover {
+    background: #555;
 }
 
 @media (min-width: 768px) {
-    .header-logo {
-        cursor: pointer;
-    }
-
     .menu-toggle {
         display: none;
     }
@@ -113,7 +144,8 @@
         gap: 1.5rem;
     }
 
-    .header-login form {
-        gap: 1rem;
+    .matricule-se-btn {
+        padding: 0.6rem 1.8rem;
+        font-size: 1.05rem;
     }
 }
