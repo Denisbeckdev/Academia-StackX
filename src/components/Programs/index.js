@@ -18,13 +18,13 @@ function Programs() {
         },
         {
             id: 2,
-            title: "MusculacaoImg",
+            title: "Musculação",
             description: "Exercícios com pesos para hipertrofia e definição muscular.",
             img: MusculacaoImg
         },
         {
             id: 3,
-            title: "PersonalImg",
+            title: "Personal",
             description: "Treino personalizado com acompanhamento individual.",
             img: PersonalImg
         }

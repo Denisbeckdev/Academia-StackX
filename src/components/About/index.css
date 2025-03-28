@@ -1,6 +1,7 @@
 .about-section {
     padding: 2rem 5%;
-    max-width: 1200px;
+    width: 100%;
+    background-color: #f8f9fa;
     margin: 0 auto;
 }
 
@@ -14,6 +15,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.about-text h2 {
+    text-align: center;
+}
+
+.about-text p {
+    text-align: justify;
+    text-align-last: center;
+    hyphens: auto;
 }
 
 .carousel-container {
@@ -72,11 +83,33 @@
 
     .about-text {
         padding-right: 2rem;
-        text-align: left;
         height: 100%;
+    }
+
+    .about-text h2 {
+        text-align: left;
+    }
+
+    .about-text p {
+        text-align: left;
+        text-align-last: left;
     }
 
     .carousel {
         height: 350px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-section {
+        padding: 3rem 5%;
+    }
+
+    .about-grid {
+        gap: 3rem;
+    }
+
+    .carousel {
+        height: 400px;
     }
 }
