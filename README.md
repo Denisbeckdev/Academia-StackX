@@ -33,8 +33,3 @@ academia-stackx/
 ├── package.json # Dependências e scripts
 └── README.md # Documentação
 
-## ⚙️ Instalação e Execução
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/academia-stackx.git
