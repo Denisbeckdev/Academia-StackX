@@ -25,16 +25,16 @@ function About() {
   }, []);
 
   return (
-    <section className="about-section">
+    <section id="about" className="about-section">
       <div className="about-grid">
         <div className="about-text">
           <h2>A StackX</h2>
           <p>
-          Cada movimento executado em nossos espaços é um passo rumo à melhor versão de você mesmo.
-Acreditamos que a disciplina dos treinos constrói não apenas corpos mais fortes, mas vidas mais equilibradas e saudáveis.
-<br />
-Nosso combustível diário? Ver alunos superando limites, batendo metas e escrevendo suas próprias histórias de superação.
-Juntos, formamos uma comunidade onde o progresso de um inspira o crescimento de todos.
+            Cada movimento executado em nossos espaços é um passo rumo à melhor versão de você mesmo.
+            Acreditamos que a disciplina dos treinos constrói não apenas corpos mais fortes, mas vidas mais equilibradas e saudáveis.
+            <br />
+            Nosso combustível diário? Ver alunos superando limites, batendo metas e escrevendo suas próprias histórias de superação.
+            Juntos, formamos uma comunidade onde o progresso de um inspira o crescimento de todos.
           </p>
         </div>
 

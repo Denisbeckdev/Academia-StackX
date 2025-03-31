@@ -55,7 +55,7 @@ function Programs() {
         <section id="programs" className="programs-section">
             <div className="programs-container">
                 <h2>Programas</h2>
-                
+
                 <div className="plan-selector">
                     {['mensal', 'semestral', 'anual'].map((plan) => (
                         <button
@@ -79,7 +79,7 @@ function Programs() {
                                     {formatPrice(planPrices[selectedPlan])}
                                     <span>/{selectedPlan}</span>
                                 </p>
-                                <button 
+                                <button
                                     className="enroll-button"
                                     onClick={() => handleEnrollClick(program)}
                                 >
@@ -106,20 +106,20 @@ function Programs() {
                                 <input type="text" placeholder="Nome completo" required />
                                 <input type="number" placeholder="Idade" min="15" required />
                                 <input type="date" placeholder="Data de nascimento" required />
-                                <input 
-                                    type="text" 
-                                    placeholder="CPF" 
-                                    pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
+                                <input
+                                    type="text"
+                                    placeholder="CPF"
+                                    pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
                                     title="Formato: 000.000.000-00"
-                                    required 
+                                    required
                                 />
                                 <input type="email" placeholder="E-mail" required />
-                                <input 
-                                    type="tel" 
-                                    placeholder="Telefone" 
-                                    pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" 
+                                <input
+                                    type="tel"
+                                    placeholder="Telefone"
+                                    pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}"
                                     title="Formato: (00) 00000-0000"
-                                    required 
+                                    required
                                 />
 
                                 <div className="radio-group">

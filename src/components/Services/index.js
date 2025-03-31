@@ -6,7 +6,7 @@ import personal from '../assets/images/personal.jpg';
 
 function Services() {
     return (
-        <section className="services">
+        <section id="services" className="services">
             <h2>Nossos Serviços</h2>
 
             <div className="services-grid">

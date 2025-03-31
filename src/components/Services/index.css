@@ -69,3 +69,22 @@
         min-height: 350px;
     }
 }
+
+@media (min-width: 1024px) {
+    .services {
+        padding: 4rem 10%;
+    }
+
+    .services-grid {
+        gap: 3rem;
+    }
+
+    .card {
+        max-width: 350px;
+        min-height: 400px;
+    }
+
+    .card-text {
+        font-size: 1.1rem;
+    }
+}

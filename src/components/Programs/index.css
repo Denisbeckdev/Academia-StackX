@@ -34,10 +34,9 @@
   font-weight: 600;
   color: #3498db;
   transition: all 0.3s;
-  font-size: 0.9rem;
 }
 
-.plan-button.active, 
+.plan-button.active,
 .plan-button:hover {
   background: #3498db;
   color: white;
@@ -49,12 +48,6 @@
   gap: 2rem;
   margin: 2rem auto 0;
   width: 100%;
-}
-
-@media (min-width: 768px) {
-  .cards-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 .program-card {
@@ -214,14 +207,14 @@
   background: #219653;
 }
 
-@media (max-width: 480px) {
-  .popup-content {
-    padding: 1.2rem;
+@media (min-width: 768px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .radio-group {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

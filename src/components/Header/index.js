@@ -15,10 +15,13 @@ const Header = () => {
   return (
     <header className="header-container">
       <div className="header-logo">
-        <h1>StackX</h1>
+        <button onClick={() => scrollTo('home')} className="home-button">
+          <h1>Academia</h1>
+        </button>
+
       </div>
 
-      <button 
+      <button
         className="menu-button"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-expanded={isMenuOpen}
@@ -34,7 +37,7 @@ const Header = () => {
         </ul>
       </nav>
 
-      <button 
+      <button
         className="cta-button"
         onClick={() => scrollTo('programs')}
       >
